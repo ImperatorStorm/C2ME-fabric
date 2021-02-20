@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.yatopiamc.c2me.mixin",
+  "compatibilityLevel": "JAVA_11",
+  "mixins": [
+    "threading.chunkio.MixinChunkSerializer",
+    "threading.chunkio.MixinChunkTickScheduler",
+    "threading.chunkio.MixinSerializingRegionBasedStorage",
+    "threading.chunkio.MixinServerTickScheduler",
+    "threading.chunkio.MixinSimpleTickScheduler",
+    "threading.chunkio.MixinStorageIoWorker",
+    "threading.chunkio.MixinThreadedAnvilChunkStorage",
+    "threading.chunkio.MixinVersionedChunkStorage",
+    "threading.worldgen.MixinChunkStatus",
+    "threading.worldgen.MixinServerWorld",
+    "threading.worldgen.MixinStructureManager",
+    "threading.worldgen.MixinThreadedAnvilChunkStorage",
+    "util.log4j2shutdownhookisnomore.MixinMain",
+    "util.log4j2shutdownhookisnomore.MixinMinecraftDedicatedServer"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
